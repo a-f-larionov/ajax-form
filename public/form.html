@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://jquery.com/jquery-wp-content/themes/jquery.com/i/favicon.ico">
+
+    <link rel="stylesheet" href="./signin.css">
+
+    <title>Ajax Form</title>
+</head>
+<body class="text-center">
+
+
+<!-- Optional JavaScript -->
+
+<!-- Форма регистрации -->
+<form class="form-signin" id="signinForm" style="display: none;">
+
+    <!-- Logo Ajax-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/AJAX_logo_by_gengns.svg"
+         style="max-width: 200px;width:100%;">
+
+    <h1 class="h3">Регистрируйтесь</h1>
+
+    <div class="alert alert-danger" role="alert" id="errorMessage" style="display: none;">
+
+    </div>
+
+    <input type="text" id="inputName" class="form-control" placeholder="Имя" autofocus>
+
+    <input type="text" id="inputSurname" class="form-control" placeholder="Фамилия" autofocus>
+
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+
+    <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+
+    <input type="password" id="inputPasswordConfirm" class="form-control" placeholder="Повтор пароля" required>
+
+    <br>
+
+    <button class="btn btn-block btn-primary " type="submit">Регистрация</button>
+
+</form>
+
+
+<!-- Сообщение об успешной регистрации -->
+<div class="success-message alert alert-success" role="alert" id="successMessage" style="display: none;">
+
+    <!-- Logo Ajax-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/AJAX_logo_by_gengns.svg"
+         style="max-width: 200px;width:100%;">
+
+    <h4 class="alert-heading">Поздравляем!</h4>
+    <p>Успешно зарегистрированы!</p>
+    <hr>
+    <p class="mb-0">Регистриуйтесь еще! :)</p>
+    <button class="btn btn-primary" id="registerAgain">Ещё!</button>
+</div>
+
+<!-- Крутящийся загрузчик -->
+<div class="loader" id="loader" style="display: none;"></div>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<!-- Signin script -->
+<script src="./signin.js"></script>
+</body>
+</html>

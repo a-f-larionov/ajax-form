@@ -1,0 +1,11 @@
+{
+  "require": {
+    "monolog/monolog": "*",
+    "respect/validation": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/App/"
+    }
+  }
+}
