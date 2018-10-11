@@ -15,6 +15,7 @@ $(document).ready(function () {
             url: './register.php',
             type: 'POST',
             async: true,
+            dataType: 'json',
             data: {
                 name: $('#inputName').val(),
                 surname: $('#inputSurname').val(),
@@ -39,7 +40,7 @@ $(document).ready(function () {
                 }
             },
             error: function () {
-                $('#errorMessage').html('Произошла ошикбка, Что то пошло не так');
+                $('#errorMessage').html('Произошла ошибка, Что то пошло не так');
             },
         });
 
